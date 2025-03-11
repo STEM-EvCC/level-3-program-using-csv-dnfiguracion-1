@@ -1,8 +1,8 @@
 import csv
 
 # Specify the input and output file names
-input_file = 'input.csv'
-output_file = 'security_incidents.csv'
+input_file = 'security_incidents.csv'
+output_file = 'security_incidents_modified.csv'
 
 # Read the CSV file
 with open(input_file, mode='r') as infile:
@@ -10,8 +10,8 @@ with open(input_file, mode='r') as infile:
     data = list(reader)
 
 # Add a new column with a default value
-new_column_name = 'NewColumn'
-default_value = 'DefaultValue'
+new_column_name = 'Status'
+default_value = 'Pending'
 
 # Add the new column to the header
 header = data[0] + [new_column_name]
